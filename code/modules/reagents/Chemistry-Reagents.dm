@@ -1541,8 +1541,8 @@ datum
 				if(M.bodytemperature < 170)
 					M.adjustCloneLoss(-3)
 					M.adjustOxyLoss(-3)
-					M.heal_organ_damage(1,1)
-					M.adjustToxLoss(-1)
+					M.heal_organ_damage(3,3)
+					M.adjustToxLoss(-3)
 				..()
 				return
 
