@@ -383,12 +383,12 @@ datum
 
 					var/datum/gas_mixture/napalm = new
 
-					napalm.toxins = created_volume*10
-					napalm.temperature = 400+T0C
+					napalm.toxins = created_volume*5
+					napalm.temperature = 250+T0C
 					napalm.update_values()
 
 					target_tile.assume_air(napalm)
-					spawn (0) target_tile.hotspot_expose(700, 400)
+					spawn (0) target_tile.hotspot_expose(500, 250)
 				holder.del_reagent("napalm")
 				return
 
